@@ -1,0 +1,51 @@
+body{
+    background-color: #245;
+    font-size: 16px;
+}
+#exertrybe{
+    font-size: 65px;
+    color: orange;
+}
+#pul{
+    color: #fff;
+    padding: 10px;
+    background-color: #272822;
+    border-radius: 10px;
+    width: 25%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 3em;
+}
+#ama{
+    background-color: yellow;
+    font-size: 16px;
+    font-style: italic;
+    padding: 5px;
+    color: #272822;
+    list-style: none;
+    max-width: 98%;
+    margin-bottom: 5px;
+    text-align: left;
+}
+#ver{
+    background-color: red;
+    font-size: 16px;
+    line-height: unset;
+    padding: 5px;
+    color: #272822;
+    list-style: none;
+    max-width: 98%;
+    margin-bottom: 5px;
+    text-align: left;
+}
+#mar{
+    background-color: rgb(97, 33, 3);
+    font-size: 16px;
+    text-align: start;
+    padding: 5px;
+    color: #fff;
+    list-style: none;
+    max-width: 98%;
+    margin-bottom: 5px;
+    text-align: left;
+}

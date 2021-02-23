@@ -1,0 +1,46 @@
+/*Exercício 3.4 início*/
+h1 {
+    text-align: center;
+}
+
+ul{
+    text-align: center;
+    list-style: none;
+    width: 700px;
+    height: 100%;
+    margin: auto;
+}
+.first {
+    background-color: rgb(235, 200, 84);
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    width: 200px;
+    margin: auto;
+}
+.second {
+    background-color: rgb(219, 219, 219);
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    margin: auto;
+    width: 200px;
+    display: inline-block;
+}
+.third {
+    background-color: rgb(170, 142, 106);
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+    height: 50px;
+    width: 200px;
+    display: inline-block;
+    margin-top: 0;
+}
+h3{
+    text-align: center;
+}
+.premio li{
+    display: inline;
+}
+/*Exercício 3.4 fim*/

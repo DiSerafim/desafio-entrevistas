@@ -1,0 +1,160 @@
+body{
+    background-color: #ccc;
+}
+.caixa {
+    color: white;
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: top;
+  }
+
+  .width-and-height {
+    height: 50px;
+    width: 50px;
+  }
+
+  .padding {
+  /* insira aqui um padding de 20px na classe abaixo para aplicá-lo aos itens B, C e D */
+    padding: 20px;
+  }
+
+  .margin {
+  /* insira aqui uma margem de 30px na classe abaixo para aplicá-la aos itens C e D */
+    margin: 30px;
+  }
+  .super-mario{
+    width: 10%;
+    padding: 0 5px;
+    position: absolute;
+    border: solid 1px #ccc;
+    position: absolute;
+  }
+  .goomba{
+    width: 20%;
+    padding: 0 5px;
+    margin-left: 100px;
+  }
+  .baloon{
+    width: 10%;
+    padding: 0 5px;
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 50px;
+    z-index: 1;
+  }
+  .bowser{
+    width: 20%;
+    padding: 0 5px;
+    margin-left: 150px;
+  }
+  .word{
+      position: absolute;
+      font-size: 12px;
+      margin-top: -265px;
+      margin-left: 448px;
+      z-index: 2;
+  }
+  .border {
+  /* insira aqui uma borda com valor '5px solid black' para aplicá-la ao item D */
+    border: solid 5px #000;
+  }
+.img{
+    max-width: 50%;
+}
+span{
+    color: blue;
+}
+.paragrafos{
+    background-color: cornsilk;
+    padding: 5px;
+    width: 700px;
+    height: 220px;
+    overflow: auto;
+}
+.menu{
+  padding: 5px;
+  background-color: #c1c1c1;
+}
+.menu ul{
+  padding: 5px;
+}
+.menu li{
+  padding: 5px;
+  list-style: none;
+  margin-left: 10px;
+  display: inline;
+}
+.menu li:hover{
+  background-color: #999;
+  height: 100%;
+}
+.menu li a, ol li a{
+  text-decoration: none;
+}
+.local-atual p{
+  background-color: #272;
+  width: 4%;
+  padding: 5px;
+  font-size: 10px;
+  color: #fff;
+}
+p.lista , h1.lista{
+  background-color: #c1c1c1;
+  text-align: center;
+}
+ol.lista{
+  background-color: #c5c5c5;
+  padding: 10px;
+  text-decoration: none;
+}
+li.lista:hover{
+  background-color: #ccc;
+}
+li.lista a:active{
+  color: #272;
+  font-size: 18px;
+  font-family: monospace;
+}
+li.lista a{
+  text-decoration: none;
+}
+ol.lista li{
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.pseudo{
+  background-color: #c5c5c5;
+}
+.pseudo h3:hover{
+  border: solid 1px rgb(32, 97, 129);
+  padding: 1px;
+}
+.pri{
+  background-color: rgb(243, 10, 10);
+  font-family: cursive;
+  font-style: italic;  
+}
+.sec{
+  background-color: rgb(223, 113, 10);
+  font-family: fantasy;
+  font-style: oblique;
+}
+.com{
+  background-color: darkorchid;
+  font-family: monospace;
+  font-style: italic;
+  padding: 1px;
+  font-size: 20px;
+}
+.esc{
+  background-color: darkslategray;
+  color: #ccc;
+  font-family: initial;
+  font-style: unset;
+}
+.cla{
+  background-color: cyan;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: italic;
+}
