@@ -1,0 +1,14 @@
+.col-md-9, .ms-sm-auto, .col-lg-10, .px-md-4 {
+  height: auto;
+  margin-bottom: 80px;
+}
+
+
+.content {
+  text-align: center !important;
+  padding: 50px;
+}
+
+.table-responsive {
+  overflow-x: hidden;
+}

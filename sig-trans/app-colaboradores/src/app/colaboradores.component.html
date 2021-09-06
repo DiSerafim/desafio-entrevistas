@@ -1,0 +1,26 @@
+<table class="table-colaboradores">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Departamento</th>
+      <th>Nome</th>
+      <th>Telefone</th>
+      <th>Endereço</th>
+      <th>Foto</th>
+      <th>Editar</th>
+      <th>Deletar</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let cliente of clientes">
+      <td>{ { colaborador.id } }</td>
+      <td>{ { colaborador.departamento } }</td>
+      <td>{ { colaborador.nome } }</td>
+      <td>{ { colaborador.telefone } }</td>
+      <td>{ { colaborador.endereco } }</td>
+      <td>{ { colaborador.foto } }</td>
+      <td>{ { colaborador.edit } }</td>
+      <td>{ { colaborador.delet } }</td>
+    </tr>
+  </tbody>
+</table>

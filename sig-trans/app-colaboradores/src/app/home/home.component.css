@@ -1,0 +1,16 @@
+.card-text {
+  text-align: center;
+  margin-bottom: 1px;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.content {
+  padding: 50px 0;
+}

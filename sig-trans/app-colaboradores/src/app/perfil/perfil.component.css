@@ -1,0 +1,7 @@
+.content {
+  padding: 50px 0;
+}
+
+tbody, td, th, tr {
+  padding: 0 10px;
+}
