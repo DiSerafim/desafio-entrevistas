@@ -1,0 +1,49 @@
+<app-header></app-header>
+
+<div class="container-fluid">
+  <div class="row">
+    <app-navegacao></app-navegacao>
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+      <div class="table-responsive">
+        <router-outlet></router-outlet>
+      </div>
+    </main>
+  </div>
+</div>
+
+
+
+
+
+
+
+<!-- // function login() {
+//   setUserEmail(input.email);
+//   localStorage.setItem('user', JSON.stringify({ email: input.email }));
+//   history.push('');
+// }
+
+<form class="login">
+  <div class="email">
+    <label for="email" class="form-label">Email:</label>
+    <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" />
+  </div>
+  <div class="email">
+    <label for="password" class="form-label">Senha</label>
+    <input type="password" class="form-control" id="inputPassword" />
+    <div id="emailHelp" class="form-text">Minimo 6 digitos</div>
+  </div>
+  <button type="submit" class="btn btn-primary">JS-Entrar</button>
+</form>
+
+<!-- comandos -->
+<!--
+└─# npm install -g @angular/cli
+└─# ng new app-colaboradores
+└─# npm serve
+└─# npm install --save bootstrap
+└─# npm install --save jquery
+└─# ng serve
+└─# ng g component +nome-do-component(header)
+-->
+ 
