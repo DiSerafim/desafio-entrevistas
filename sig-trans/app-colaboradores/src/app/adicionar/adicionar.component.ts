@@ -10,6 +10,10 @@ export class AdicionarComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    function olaMundo() {
+      console.log('Hello word!');
+    }
+    olaMundo();
   }
 
 }
