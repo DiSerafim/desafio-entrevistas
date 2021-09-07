@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
-// import { HttpClientModule } from '@angular/common/http';
 
 import { AdicionarComponent } from './adicionar/adicionar.component';
 import { AdministracaoComponent } from './administracao/administracao.component';
@@ -61,7 +60,6 @@ import { ComercialComponent } from './comercial/comercial.component';
       { path: 'excluir', component: ExcluirComponent },
       { path: '**', component: NaoEncontradoComponent },
     ])
-    // HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
