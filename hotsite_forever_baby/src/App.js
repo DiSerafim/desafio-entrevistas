@@ -5,8 +5,10 @@ function App() {
     <div className="App">
       {/* Header */}
       <header>
-        <div className='logo'>Sou alogo</div>
-        <div className='search'>sou a busca</div>
+        <div className='logo'>
+          <img src='' alt=''></img>
+        </div>
+        <input></input>
         <div className='btn'>
           <div className='icon-user'>user</div>
           <div className='icon-cart'>Cart</div>

@@ -1,0 +1,158 @@
+* {
+    margin: auto;
+}
+
+body {
+    background-color: #F7B094;
+    height: 2244;
+    max-width: 1140px;
+}
+
+header {
+    background-color: #F7B094;
+    display: inline-block;
+    position: absolute;
+    max-width: 1140px;
+}
+
+header .logo {
+    height: 85.54px;
+    width: 160px;
+    z-index: 1;
+    margin-top: -110px;
+    margin-left: 29px;
+}
+
+header form input {
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 3px;
+    color: #AAAAAA;
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 14px;
+    height: 52px;
+    line-height: 16px;
+    margin-top: -70px;
+    margin-left: 252px;
+    padding: 0 0 0 17px;
+    position: absolute;
+    text-decoration: none;
+    width: 651px;
+}
+
+header form #btn {
+    border: none;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    color: #345C7D;
+    cursor: pointer;
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: bold;
+    float: right;
+    line-height: 16px;
+    height: 48px;
+    padding: 0 10px 0 0;
+    position: absolute;
+    margin-left: 821px;
+    margin-top: -68px;
+    width: 80px;
+}
+
+/* icon */
+header .btn {
+    display: inline-block;
+    height: 62px;
+    position: absolute;
+    margin-left: 960px;
+    margin-top: -70px;
+    width: 200px;
+}
+
+.btn .icon-user {
+    background-color: #F5717F;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 42px;
+    margin-left: 0;
+    position: absolute;
+    text-align: center;
+    width: 42px;
+}
+
+.btn .user {
+    color: #FFFFFF;
+    display: inline-block;
+    font-family: Roboto;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    height: 12px;
+    line-height: 12px;
+    letter-spacing: 0em;
+    margin-top: 45px;
+    margin-left: -15px;
+    position: absolute;
+    text-align: left;
+    width: 75px;
+}
+
+.btn .icon-cart {
+    background-color: #F5717F;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 42px;
+    margin-left: 40%;
+    margin-top: -10;
+    position: absolute;
+    text-align: center;
+    width: 42px;
+}
+
+.btn .cart {
+    color: #FFFFFF;
+    display: inline-block;
+    font-family: Roboto;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    height: 12px;
+    letter-spacing: 0em;
+    line-height: 12px;
+    margin-left: 73px;
+    margin-top: 45px;
+    width: 68px;
+}
+
+menu {
+    background-color: #F5717F;
+    border-radius: 0px;
+    color: #FFFFFF;
+    height: 50px;
+    left: 0px;
+    margin-top: 140px;
+    top: 0px;
+    width: 100%;
+}
+
+menu a {
+    align-items: left;
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-style: bold;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    /* margin-top: -20px; */
+    /* margin-left: 0; */
+    /* padding: 20px 35px; */
+    /* position: absolute; */
+    text-decoration: none;
+    text-transform: uppercase;
+}
+  
