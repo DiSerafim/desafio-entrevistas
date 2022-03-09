@@ -1,29 +1,27 @@
-* {
-    margin: auto;
-}
-
 body {
-    background-color: #F7B094;
-    height: 2244;
-    max-width: 1140px;
+
+    font-family: Roboto;
 }
 
-header {
+/* top */
+.top {
     background-color: #F7B094;
     display: inline-block;
-    position: absolute;
-    max-width: 1140px;
+    width: 1140px;
 }
 
-header .logo {
-    height: 85.54px;
-    width: 160px;
-    z-index: 1;
-    margin-top: -110px;
+/* logo */
+.top .logo {
+    border-radius: 0px;
+    height: 85px;
+    margin-bottom: 16px;
     margin-left: 29px;
+    margin-top: 29px;
+    width: 160px;
 }
 
-header form input {
+/* form search */
+.top form input {
     background-color: #FFFFFF;
     border: none;
     border-radius: 3px;
@@ -34,7 +32,8 @@ header form input {
     font-size: 14px;
     height: 52px;
     line-height: 16px;
-    margin-top: -70px;
+    margin-bottom: 36px;
+    margin-top: -85px;
     margin-left: 252px;
     padding: 0 0 0 17px;
     position: absolute;
@@ -42,10 +41,7 @@ header form input {
     width: 651px;
 }
 
-header form #btn {
-    border: none;
-    border-bottom-right-radius: 3px;
-    border-top-right-radius: 3px;
+.top form #btn {
     color: #345C7D;
     cursor: pointer;
     font-family: Roboto;
@@ -56,35 +52,34 @@ header form #btn {
     line-height: 16px;
     height: 48px;
     padding: 0 10px 0 0;
-    position: absolute;
     margin-left: 821px;
-    margin-top: -68px;
+    margin-top: -83px;
     width: 80px;
 }
 
-/* icon */
-header .btn {
+/* button icon */
+.top .btn {
     display: inline-block;
-    height: 62px;
+    height: 65px;
     position: absolute;
-    margin-left: 960px;
-    margin-top: -70px;
-    width: 200px;
+    margin-left: 910px;
+    margin-top: -90px;
+    width: 220px;
 }
 
-.btn .icon-user {
+.top .btn .icon-user {
     background-color: #F5717F;
     border: none;
     border-radius: 50%;
     cursor: pointer;
     height: 42px;
-    margin-left: 0;
-    position: absolute;
+    margin-left: 42px;
+    margin-top: 0;
     text-align: center;
     width: 42px;
 }
 
-.btn .user {
+.top .btn .icon-text-user {
     color: #FFFFFF;
     display: inline-block;
     font-family: Roboto;
@@ -94,27 +89,26 @@ header .btn {
     height: 12px;
     line-height: 12px;
     letter-spacing: 0em;
-    margin-top: 45px;
-    margin-left: -15px;
+    margin-top: 50px;
+    margin-left: -145px;
     position: absolute;
     text-align: left;
     width: 75px;
 }
 
-.btn .icon-cart {
+.top .btn .icon-cart {
     background-color: #F5717F;
     border: none;
     border-radius: 50%;
     cursor: pointer;
     height: 42px;
-    margin-left: 40%;
-    margin-top: -10;
-    position: absolute;
+    margin-left: 42px;
+    margin-top: 0;
     text-align: center;
     width: 42px;
 }
 
-.btn .cart {
+.top .btn .icon-text-cart {
     color: #FFFFFF;
     display: inline-block;
     font-family: Roboto;
@@ -122,37 +116,44 @@ header .btn {
     font-style: normal;
     font-weight: 700;
     height: 12px;
-    letter-spacing: 0em;
     line-height: 12px;
-    margin-left: 73px;
-    margin-top: 45px;
-    width: 68px;
+    letter-spacing: 0em;
+    margin-top: 50px;
+    margin-left: -49px;
+    position: absolute;
+    text-align: left;
+    width: 75px;
 }
 
+/* menu */
 menu {
     background-color: #F5717F;
     border-radius: 0px;
     color: #FFFFFF;
-    height: 50px;
+    /* max-height: 50px;
+    height: 50px; */
     left: 0px;
-    margin-top: 140px;
-    top: 0px;
-    width: 100%;
+    margin-top: 0px;
+    padding: 18px 0 15px 0;
+    width: 1140px;
 }
 
 menu a {
-    align-items: left;
+    border-radius: none;
     color: #FFFFFF;
     font-family: Roboto;
-    font-style: bold;
     font-size: 14px;
+    font-style: normal;
     font-weight: 700;
+    left: 257px;
+    letter-spacing: 0em;
     line-height: 16px;
-    /* margin-top: -20px; */
-    /* margin-left: 0; */
-    /* padding: 20px 35px; */
-    /* position: absolute; */
+    margin-left: 65px;
+    height: 16px;
+    text-align: left;
     text-decoration: none;
     text-transform: uppercase;
+    margin-top: 18px;
+    margin-bottom: 16px;
+    width: 80px;
 }
-  
