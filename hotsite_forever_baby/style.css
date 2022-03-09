@@ -1,0 +1,287 @@
+body {
+    background-color: #F7B094;
+    font-family: Roboto;
+    max-width: 1140px;
+}
+
+/* top */
+.top {
+    background-color: #F7B094;
+    display: inline-block;
+    width: 1140px;
+}
+
+/* logo */
+.top .logo {
+    border-radius: 0px;
+    height: 85px;
+    margin-bottom: 16px;
+    margin-left: 29px;
+    margin-top: 29px;
+    width: 160px;
+}
+
+/* form search */
+.top form input {
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 3px;
+    color: #AAAAAA;
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 14px;
+    height: 52px;
+    line-height: 16px;
+    margin-bottom: 36px;
+    margin-top: -85px;
+    margin-left: 252px;
+    padding: 0 0 0 17px;
+    position: absolute;
+    text-decoration: none;
+    width: 651px;
+}
+
+.top form #btn {
+    color: #345C7D;
+    cursor: pointer;
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: bold;
+    float: right;
+    line-height: 16px;
+    height: 48px;
+    padding: 0 10px 0 0;
+    margin-left: 821px;
+    margin-top: -83px;
+    width: 80px;
+}
+
+/* button icon */
+.top .btn {
+    display: inline-block;
+    height: 65px;
+    position: absolute;
+    margin-left: 910px;
+    margin-top: -90px;
+    width: 220px;
+}
+
+.top .btn .icon-user {
+    background-color: #F5717F;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 42px;
+    margin-left: 42px;
+    margin-top: 0;
+    text-align: center;
+    width: 42px;
+}
+
+.top .btn .icon-text-user {
+    color: #FFFFFF;
+    display: inline-block;
+    font-family: Roboto;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    height: 12px;
+    line-height: 12px;
+    letter-spacing: 0em;
+    margin-top: 50px;
+    margin-left: -145px;
+    position: absolute;
+    text-align: left;
+    width: 75px;
+}
+
+.top .btn .icon-cart {
+    background-color: #F5717F;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 42px;
+    margin-left: 42px;
+    margin-top: 0;
+    text-align: center;
+    width: 42px;
+}
+
+.top .btn .icon-text-cart {
+    color: #FFFFFF;
+    display: inline-block;
+    font-family: Roboto;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    height: 12px;
+    line-height: 12px;
+    letter-spacing: 0em;
+    margin-top: 50px;
+    margin-left: -49px;
+    position: absolute;
+    text-align: left;
+    width: 75px;
+}
+
+/* menu */
+menu {
+    background-color: #F5717F;
+    border-radius: 0px;
+    color: #FFFFFF;
+    /* max-height: 50px;
+    height: 50px; */
+    left: 0px;
+    margin-top: 0px;
+    padding: 18px 0 15px 0;
+    width: 1140px;
+}
+
+menu a {
+    border-radius: none;
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    left: 257px;
+    letter-spacing: 0em;
+    line-height: 16px;
+    margin-left: 65px;
+    height: 16px;
+    text-align: left;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 18px;
+    margin-bottom: 16px;
+    width: 80px;
+}
+
+/* carousel */
+.carousel {
+    background: #F7B094;
+    height: 380px;
+    width: 1140px;
+    text-align: center;
+    margin-top: -16px;
+}
+
+.carousel img {
+    height: 380px;
+    width: 1140px;
+}
+
+.carousel li {
+    align-items: center;
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 50px;
+    margin-top: -30px;
+    text-align: center;
+}
+
+/* main content */
+main {
+    background-color: #F7B094;
+    width: 1140px;
+    margin-top: -70px;
+}
+
+main content {
+    display: inline-block;
+    background-color: #345C7D;
+}
+
+main h1 {
+    color: #FFFFFF;
+    margin-bottom: 26px;
+    margin-top: 170px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0em;
+}
+
+main h1 span{
+    color: #345C7D;
+    text-decoration: underline;
+    text-decoration-color: #F5717F;
+}
+
+/* card */
+main .card {
+    background-color: #FFFFFF;
+    width: 256px;
+    height: 387px;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+main .card img {
+    background-color: #F1F1F1;
+    width: 256px;
+    height: 190px;
+}
+
+main .card .title {
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #345C7D;
+    margin-left: 14px;
+}
+
+main .card .price {
+    margin-left: 14px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #BF6B84;
+}
+
+main .card .rating {
+    text-align: center;
+    cursor: pointer;
+}
+
+main .card button {
+    background-color: #FF8A00;
+    height: 46px;
+    width: 227px;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 0%;
+    margin-left: 14px;
+    margin-bottom: 0%;
+    border: none;
+    background: #FF8A00;
+    box-shadow: inset 0px 4px 10px #FFAD4D;
+    border-radius: 3px;
+}
+
+main .card button svg {
+    float: left;
+    margin-top: 11px;
+    width: 21px;
+}
+
+main .card button p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
