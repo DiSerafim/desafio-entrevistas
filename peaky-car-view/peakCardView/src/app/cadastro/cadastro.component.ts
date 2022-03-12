@@ -7,6 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CadastroComponent implements OnInit {
 
+  title = 'Cadastrar';
+
+  public cadastro = [
+    { name: 'Marta' },
+    { name: 'Paulla' },
+    { name: 'Laura' },
+    { name: 'Luiza' },
+    { name: 'Lucas' },
+    { name: 'Pedro' },
+    { name: 'Paulo' },
+  ];
+
   constructor() { }
 
   ngOnInit(): void {

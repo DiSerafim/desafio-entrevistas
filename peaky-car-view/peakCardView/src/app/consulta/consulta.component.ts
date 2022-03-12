@@ -7,6 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ConsultaComponent implements OnInit {
 
+  title = 'Consultar';
+
+  public consulta = [
+    { name: 'Lauro' },
+    { name: 'Roberto' },
+    { name: 'Ronaldo' },
+    { name: 'Rodrigo' },
+    { name: 'Alexandre' },
+  ];
+
   constructor() { }
 
   ngOnInit(): void {
