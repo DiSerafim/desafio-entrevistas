@@ -1,6 +1,23 @@
-<h1>{{title}}</h1>
-<ul>
-    <li *ngFor="let i of cadastro">
-        {{ i.name }}
-    </li>
-</ul>
+<app-title [title]="title"></app-title>
+
+<table class="table">
+    <thead class="table-dark">
+      <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nome</th>
+          <th scope="col">Sobrenome</th>
+          <th scope="col">Telefone</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of cadastro">
+          <th scope="row">{{ i.id }}</th>
+          <td>{{ i.name }}</td>
+          <td>{{ i.lastName }}</td>
+          <td>{{ i.phone }}</td>
+      </tr>
+    </tbody>
+</table>
+  
+  
+  

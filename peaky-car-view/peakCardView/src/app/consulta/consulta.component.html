@@ -1,6 +1,18 @@
-<h1>{{title}}</h1>
-<ul>
-    <li *ngFor="let i of consulta">
-        {{ i.name }}
-    </li>
-</ul>
+<app-title [title]="title"></app-title>
+
+<table class="table">
+    <thead class="table-dark">
+      <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nome</th>
+          <th scope="col">Discipline</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of consulta">
+          <th scope="row">{{ i.id }}</th>
+          <td>{{ i.name }}</td>
+          <td>{{ i.discipline }}</td>
+      </tr>
+    </tbody>
+</table>

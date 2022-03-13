@@ -7,14 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ConsultaComponent implements OnInit {
 
-  title = 'Consultar';
+  public title = 'Consultar';
 
   public consulta = [
-    { name: 'Lauro' },
-    { name: 'Roberto' },
-    { name: 'Ronaldo' },
-    { name: 'Rodrigo' },
-    { name: 'Alexandre' },
+    { id: 1, name: 'Lauro', discipline: 'Matemática'},
+    { id: 2, name: 'Roberto', discipline: 'Física'},
+    { id: 3, name: 'Ronaldo', discipline: 'Português'},
+    { id: 4, name: 'Rodrigo', discipline: 'Inglês'},
+    { id: 5, name: 'Alexandre', discipline: 'Programação'},
   ];
 
   constructor() { }
