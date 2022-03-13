@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">Cadastro & Consulta</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" routerLink="cadastrar">Cadastrar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" routerLink="consultar">Consultar</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav" dropdown>
+        <li class="nav-item dropdown">
+          <a id="button-basic" dropdownToggle class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown link
+          </a>
+          <div id="dropdown-basic" *dropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="nav-link" routerLinkActive="active" routerLink="cadastrar">Cadastrar</a>
+            <a class="nav-link" routerLinkActive="active" routerLink="consultar">Consultar</a>  
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
