@@ -1,0 +1,449 @@
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 1140px;
+  max-width: 1140px;
+}
+
+body {
+  background-color: #F7B094;
+  font-family: Roboto;
+  max-width: 1140px;
+}
+
+/* top */
+.top {
+  align-items: center;
+  background-color: #F7B094;
+  display: inline-block;
+  width: 1140px;
+}
+
+/* logo */
+.top svg {
+  height: 85.54px;
+  margin-left: 29px;
+  margin-top: 29px;
+  display: inline-block;
+  width: 160px;
+}
+
+/* form search */
+.top form {
+  display: inline-block;
+  margin-left: 68px;
+  margin-top: 46px;
+  width: 651px;
+  position: absolute;
+}
+
+.top form input {
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 3px;
+  color: #AAAAAA;
+  display: inline-block;
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  height: 52px;
+  /* margin-top: 46px; */
+  padding: 0 0 0 17px;
+  text-decoration: none;
+  position: absolute;
+  width: 651px;
+}
+
+.top form #btn {
+  color: #345C7D;
+  cursor: pointer;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: bold;
+  float: right;
+  line-height: 16px;
+  height: 48px;
+  padding: 0 10px 0 0;
+  margin-left: 569px;
+  margin-top: 2px;
+  position: absolute;
+  width: 80px;
+}
+
+/* button icon */
+.top .btn {
+  min-height: 134px;
+  display: inline-block;
+  position: absolute;
+  margin-left: 719px;
+  width: 232px;
+}
+
+.top .btn .icon-user {
+  background-color: #F5717F;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 41px;
+  margin-left: 55px;
+  margin-top: 45px;
+  margin-bottom: 3px;
+  text-align: center;
+  width: 42px;
+}
+
+.top .btn .icon-text-user {
+  color: #FFFFFF;
+  display: inline-block;
+  font-family: Roboto;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  height: 12px;
+  line-height: 12px;
+  letter-spacing: 0em;
+  margin-top: 89px;
+  margin-left: -55px;
+  position: absolute;
+  text-align: left;
+}
+
+.top .btn .icon-cart {
+  background-color: #F5717F;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 42px;
+  position: absolute;
+  margin-left: 40px;
+  margin-top: 43px;
+  margin-bottom: 3px;
+  text-align: center;
+  width: 42px;
+}
+
+.top .btn .icon-text-cart {
+  color: #FFFFFF;
+  display: inline-block;
+  font-family: Roboto;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  height: 12px;
+  line-height: 12px;
+  letter-spacing: 0em;
+  margin-top: 89px;
+  margin-left: 33px;
+  position: absolute;
+  text-align: left;
+  width: 75px;
+}
+
+/* menu */
+menu {
+  background-color: #F5717F;
+  color: #FFFFFF;
+  margin-top: 15px;
+  padding: 18px 0 16px 0;
+  max-width: 1140px;
+}
+
+menu a {
+  color: #FFFFFF;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  margin-left: 39px;
+  margin-right: 37px;
+  height: 16px;
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: 18px;
+  margin-bottom: 16px;
+  width: 80px;
+}
+
+/* carousel */
+.carousel {
+  height: 400px;
+  width: 1140px;
+  text-align: center;
+}
+
+.carousel .image-carousel {
+  background: #F1F1F1;
+  height: 380px;
+  margin-top: 0;
+  width: 1140px;
+}
+
+.carousel .btn-carousel {
+  height: 20px;
+  width: 1140px;
+  position: absolute;
+}
+
+.carousel li {
+  align-items: center;
+  color: #FFFFFF;
+  display: inline-block;
+  font-size: 50px;
+  text-align: center;
+  margin-top: -45px;
+  max-height: 45px;
+}
+
+/* main content */
+main.content {
+  max-width: 1140px;
+  /* min-width: 1140px; */
+  background-color: #274;
+  position: absolute;
+  padding: 0 10px 46px 30px;
+}
+
+.content h1 {
+  color: #FFFFFF;
+  margin-bottom: 26px;
+  margin-top: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0em;
+}
+
+main h1 span{
+  color: #345C7D;
+  text-decoration: underline;
+  text-decoration-color: #F5717F;
+}
+
+/* card */
+main .card {
+  background-color: #FFFFFF;
+  width: 256px;
+  height: 387px;
+  margin: 0 19px 17px 0;
+  display: inline-block;
+}
+
+main .card img {
+  width: 256px;
+  height: 190px;
+}
+
+main .card .title {
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #345C7D;
+  margin-left: 14px;
+}
+
+main .card .price {
+  margin-left: 14px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #BF6B84;
+}
+
+main .card .rating {
+  text-align: center;
+  cursor: pointer;
+}
+
+main .card button {
+  background-color: #FF8A00;
+  height: 46px;
+  width: 227px;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-top: 0%;
+  margin-left: 14px;
+  margin-bottom: 0%;
+  border: none;
+  background: #FF8A00;
+  box-shadow: inset 0px 4px 10px #FFAD4D;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+main .card button img {
+  float: left;
+  margin-top: 11px;
+  height: 21px;
+  width: 21px;
+  background-color: none;
+  border: none;
+  color: none;
+}
+
+main .card button p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+footer {
+  text-align: center;
+  background-color: #345C7D;
+}
+
+footer .newsletter {
+  background-color: #F5717F;
+  max-height: 187px;
+  padding: 36px 0 35px 0;
+  margin-bottom: 0;
+}
+
+footer .newsletter h2 {
+  color: #FFFFFF;
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: 700;
+  line-height: 26px;
+  line-height: 100%;
+  text-transform: uppercase;
+  vertical-align: top;
+}
+
+footer .newsletter p {
+  color: #FFFFFF;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 16px;
+  line-height: 100%;
+  margin-top: -10px;
+  margin-bottom: 25px;
+  vertical-align: top;
+}
+
+/* form newsletter */
+footer form input {
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 3px;
+  color: #AAAAAA;
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  height: 52px;
+  line-height: 16px;
+  padding: 0 0 0 17px;
+  text-decoration: none;
+  width: 651px;
+}
+
+footer form #btn {
+  color: #345C7D;
+  cursor: pointer;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: bold;
+  float: right;
+  line-height: 16px;
+  height: 48px;
+  padding: 0 10px 0 5px;
+  margin-left: -111px;
+  margin-top: 2px;
+  position: absolute;
+  width: 110px;
+}
+
+footer .sociais {
+  background-color: #F1F1F1;
+  margin-top: -18px;
+  max-height: 275px;
+  padding: 10px 0 0 0;
+}
+
+footer .sociais h2 {
+  color: #345C7D;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: bold;
+  line-height: 16px;
+  padding: 5px 0 0 0;
+  text-transform: uppercase;
+}
+
+footer .sociais img {
+  width: 224px;
+}
+
+footer .extra-menu {
+  margin-top: 0px;
+  padding: 20px 0 15px 0;
+  width: 100%;
+}
+
+footer .extra-menu a {
+  color: #345C7D;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  margin-left: 65px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+footer .icon-cart {
+  margin-top: -20px;
+}
+
+footer .info {
+  background-color: #FFFFFF;
+  height: 143px;
+  text-align: center;
+  padding: 10px 0 0 0;
+}
+
+footer .info .topo p {
+  color: #AAAAAA;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: regular;
+  height: 5px;
+  line-height: 14px;
+}
+
+footer .info .bottom {
+  padding: 5px 0 5px;
+  width: 750px;
+  margin-left: 190px;
+}
+
+footer .info .bottom p {
+  color: #AAAAAA;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: regular;
+  line-height: 14px;
+  line-height: 100%;
+  height: 5px;
+  padding: 5px 0 5px;
+}
