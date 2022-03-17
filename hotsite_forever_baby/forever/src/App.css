@@ -2,140 +2,149 @@
   margin: 0;
   padding: 0;
   max-width: 1140px;
-  max-width: 1140px;
 }
 
 body {
-  background-color: #F7B094;
+  background-color: #f7b094;
   font-family: Roboto;
   max-width: 1140px;
 }
 
 /* top */
-.top {
+header {
   align-items: center;
-  background-color: #F7B094;
+  background-color: #f7b094;
   display: inline-block;
   width: 1140px;
+  height: 134px;
 }
 
 /* logo */
-.top svg {
+header svg {
+  display: inline-block;
   height: 85.54px;
   margin-left: 29px;
   margin-top: 29px;
-  display: inline-block;
   width: 160px;
 }
 
 /* form search */
-.top form {
+header form {
   display: inline-block;
   margin-left: 68px;
   margin-top: 46px;
-  width: 651px;
   position: absolute;
+  width: 651px;
 }
 
-.top form input {
-  background-color: #FFFFFF;
+header form input {
+  background-color: #fff;
   border: none;
   border-radius: 3px;
-  color: #AAAAAA;
+  color: #aaa;
   display: inline-block;
   font-family: Roboto;
+  font-size: 14px;
   font-style: italic;
   font-weight: normal;
-  font-size: 14px;
   height: 52px;
-  /* margin-top: 46px; */
   padding: 0 0 0 17px;
-  text-decoration: none;
   position: absolute;
+  text-decoration: none;
   width: 651px;
 }
 
-.top form #btn {
-  color: #345C7D;
+header form .button {
+  color: #345c7d;
   cursor: pointer;
-  font-family: Roboto;
-  font-style: normal;
-  font-size: 14px;
-  font-weight: bold;
   float: right;
-  line-height: 16px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
   height: 48px;
-  padding: 0 10px 0 0;
+  line-height: 16px;
   margin-left: 569px;
   margin-top: 2px;
+  padding: 0 10px 0 0;
   position: absolute;
   width: 80px;
 }
 
 /* button icon */
-.top .btn {
-  min-height: 134px;
+header .btn {
   display: inline-block;
-  position: absolute;
   margin-left: 719px;
+  min-height: 134px;
+  position: absolute;
   width: 232px;
 }
 
-.top .btn .icon-user {
-  background-color: #F5717F;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  height: 41px;
-  margin-left: 55px;
-  margin-top: 45px;
-  margin-bottom: 3px;
-  text-align: center;
-  width: 42px;
-}
-
-.top .btn .icon-text-user {
-  color: #FFFFFF;
-  display: inline-block;
-  font-family: Roboto;
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 700;
-  height: 12px;
-  line-height: 12px;
-  letter-spacing: 0em;
-  margin-top: 89px;
-  margin-left: -55px;
-  position: absolute;
-  text-align: left;
-}
-
-.top .btn .icon-cart {
-  background-color: #F5717F;
+header .btn .icon-user {
+  background-color: #f5717f;
   border: none;
   border-radius: 50%;
   cursor: pointer;
   height: 42px;
-  position: absolute;
-  margin-left: 40px;
-  margin-top: 43px;
   margin-bottom: 3px;
+  margin-left: 55px;
+  margin-top: 45px;
+  position: absolute;
   text-align: center;
   width: 42px;
 }
 
-.top .btn .icon-text-cart {
-  color: #FFFFFF;
+header .btn .icon-user img {
+  margin-top: 10px;
+  width: 15px;
+}
+
+header .btn .icon-text-user {
+  color: #fff;
   display: inline-block;
   font-family: Roboto;
   font-size: 10px;
   font-style: normal;
   font-weight: 700;
   height: 12px;
+  letter-spacing: 0;
   line-height: 12px;
-  letter-spacing: 0em;
+  margin-left: 42px;
   margin-top: 89px;
-  margin-left: 33px;
+  position: absolute;
+  text-align: left;
+}
+
+header .btn .icon-cart {
+  background-color: #f5717f;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 42px;
+  margin-bottom: 3px;
+  margin-left: 137px;
+  margin-top: 43px;
+  position: absolute;
+  text-align: center;
+  width: 42px;
+}
+
+header .btn .icon-cart img {
+  margin-top: 9px;
+}
+
+header .btn .icon-text-cart {
+  color: #fff;
+  display: inline-block;
+  font-family: Roboto;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  height: 12px;
+  letter-spacing: 0;
+  line-height: 12px;
+  margin-left: 133px;
+  margin-top: 89px;
   position: absolute;
   text-align: left;
   width: 75px;
@@ -143,40 +152,46 @@ body {
 
 /* menu */
 menu {
-  background-color: #F5717F;
-  color: #FFFFFF;
+  background-color: #f5717f;
+  color: #fff;
   margin-top: 15px;
-  padding: 18px 0 16px 0;
   max-width: 1140px;
+  max-height: 52px;
 }
 
-menu a {
-  color: #FFFFFF;
+menu > li {
+  font-family: Roboto;
+  display: inline-block;
+  margin: 18px 30px 16px 39px;
+}
+
+menu > li > a {
+  color: #fff;
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
-  line-height: 16px;
-  margin-left: 39px;
-  margin-right: 37px;
   height: 16px;
+  line-height: 16px;
   text-align: left;
   text-decoration: none;
   text-transform: uppercase;
-  margin-top: 18px;
-  margin-bottom: 16px;
   width: 80px;
+}
+
+menu > li > a:hover {
+  color: #345c7d;
 }
 
 /* carousel */
 .carousel {
   height: 400px;
-  width: 1140px;
   text-align: center;
+  width: 1140px;
 }
 
 .carousel .image-carousel {
-  background: #F1F1F1;
+  background: #f1f1f1;
   height: 380px;
   margin-top: 0;
   width: 1140px;
@@ -184,223 +199,225 @@ menu a {
 
 .carousel .btn-carousel {
   height: 20px;
-  width: 1140px;
   position: absolute;
+  width: 1140px;
 }
 
 .carousel li {
   align-items: center;
-  color: #FFFFFF;
+  color: #fff;
   display: inline-block;
   font-size: 50px;
-  text-align: center;
   margin-top: -45px;
   max-height: 45px;
+  text-align: center;
 }
 
 /* main content */
-main.content {
+main {
+  margin: 0;
   max-width: 1140px;
-  /* min-width: 1140px; */
-  background-color: #274;
-  position: absolute;
   padding: 0 10px 46px 30px;
 }
 
-.content h1 {
-  color: #FFFFFF;
+main h1 {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 26px;
   margin-bottom: 26px;
   margin-top: 40px;
   text-align: center;
   text-transform: uppercase;
-  font-family: Roboto;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 26px;
-  letter-spacing: 0em;
 }
 
-main h1 span{
-  color: #345C7D;
+main span {
+  color: #345c7d;
   text-decoration: underline;
-  text-decoration-color: #F5717F;
+  text-decoration-color: #f5717f;
 }
 
 /* card */
 main .card {
-  background-color: #FFFFFF;
-  width: 256px;
+  background-color: #fff;
+  display: inline-block;
   height: 387px;
   margin: 0 19px 17px 0;
-  display: inline-block;
+  width: 256px;
 }
 
-main .card img {
-  width: 256px;
+main .card .image-card {
+  background-color: #f1f1f1;
   height: 190px;
+  width: 256px;
 }
 
 main .card .title {
+  color: #345c7d;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 16px;
+  margin-left: 15px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+main .card .price {
+  color: #bf6b84;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 19px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+main .card .rating {
+  cursor: pointer;
+  margin-top: 21px;
+  text-align: center;
+}
+
+main .card button {
+  background-color: #ff8a00;
+  border: none;
+  border-radius: 3px;
+  box-shadow: inset 0 4px 10px #ffad4d;
+  cursor: pointer;
+  height: 46px;
+  margin: 25px 0 0 14px;
+  width: 227px;
+}
+
+main .card button img {
+  border: none;
+  float: left;
+  height: 21px;
+  margin-bottom: 12px;
+  margin-left: 10px;
+  margin-top: 11px;
+  width: 20px;
+}
+
+main .card button p {
+  color: #fff;
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: 16px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #345C7D;
-  margin-left: 14px;
-}
-
-main .card .price {
-  margin-left: 14px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 19px;
-  color: #BF6B84;
-}
-
-main .card .rating {
-  text-align: center;
-  cursor: pointer;
-}
-
-main .card button {
-  background-color: #FF8A00;
-  height: 46px;
-  width: 227px;
-  margin-left: 0%;
-  margin-right: 0%;
-  margin-top: 0%;
-  margin-left: 14px;
-  margin-bottom: 0%;
-  border: none;
-  background: #FF8A00;
-  box-shadow: inset 0px 4px 10px #FFAD4D;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-main .card button img {
-  float: left;
-  margin-top: 11px;
-  height: 21px;
-  width: 21px;
-  background-color: none;
-  border: none;
-  color: none;
-}
-
-main .card button p {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  color: #FFFFFF;
+  margin-left: 30px;
+  margin-top: 14px;
+  width: 192px;
 }
 
 footer {
+  background-color: #f5717f;
+  position: absolute;
   text-align: center;
-  background-color: #345C7D;
+  width: 1140px;
 }
 
 footer .newsletter {
-  background-color: #F5717F;
+  margin-top: 0;
   max-height: 187px;
-  padding: 36px 0 35px 0;
-  margin-bottom: 0;
 }
 
 footer .newsletter h2 {
-  color: #FFFFFF;
+  color: #fff;
   font-family: Roboto;
   font-size: 22px;
-  font-style: 700;
+  font-weight: 700;
   line-height: 26px;
   line-height: 100%;
+  margin-top: 20px;
   text-transform: uppercase;
-  vertical-align: top;
 }
 
 footer .newsletter p {
-  color: #FFFFFF;
+  color: #fff;
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
   line-height: 16px;
   line-height: 100%;
-  margin-top: -10px;
   margin-bottom: 25px;
+  margin-top: 3px;
   vertical-align: top;
 }
 
 /* form newsletter */
 footer form input {
-  background-color: #FFFFFF;
+  background-color: #fff;
   border: none;
   border-radius: 3px;
-  color: #AAAAAA;
+  color: #aaa;
   font-family: Roboto;
+  font-size: 14px;
   font-style: italic;
   font-weight: normal;
-  font-size: 14px;
   height: 52px;
   line-height: 16px;
+  margin-bottom: 35px;
   padding: 0 0 0 17px;
   text-decoration: none;
   width: 651px;
 }
 
-footer form #btn {
-  color: #345C7D;
+footer form .btn {
+  color: #345c7d;
   cursor: pointer;
-  font-family: Roboto;
-  font-style: normal;
-  font-size: 14px;
-  font-weight: bold;
   float: right;
-  line-height: 16px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
   height: 48px;
-  padding: 0 10px 0 5px;
-  margin-left: -111px;
+  line-height: 16px;
+  margin-left: 539px;
   margin-top: 2px;
+  padding: 0 10px 0 5px;
   position: absolute;
   width: 110px;
 }
 
 footer .sociais {
-  background-color: #F1F1F1;
-  margin-top: -18px;
+  background-color: #f1f1f1;
+  height: 275px;
   max-height: 275px;
-  padding: 10px 0 0 0;
+  padding: 10px 0 0;
 }
 
 footer .sociais h2 {
-  color: #345C7D;
+  color: #345c7d;
   font-family: Roboto;
   font-size: 16px;
-  font-style: bold;
+  font-weight: 700;
   line-height: 16px;
-  padding: 5px 0 0 0;
+  margin-top: 25px;
+  padding: 5px 0 0;
   text-transform: uppercase;
 }
 
-footer .sociais img {
-  width: 224px;
+footer .sociais .icons-sociais img {
+  margin-left: 3px;
+  margin-top: 10px;
+  width: 50px;
 }
 
 footer .extra-menu {
-  margin-top: 0px;
-  padding: 20px 0 15px 0;
-  width: 100%;
+  padding: 20px 0 15px;
 }
 
 footer .extra-menu a {
-  color: #345C7D;
+  color: #345c7d;
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -408,42 +425,60 @@ footer .extra-menu a {
   line-height: 16px;
   margin-left: 65px;
   text-align: left;
+  text-decoration: none;
   text-transform: uppercase;
 }
 
-footer .icon-cart {
-  margin-top: -20px;
+footer .extra-menu a:hover {
+  text-decoration: underline;
+}
+
+footer .sociais .cards {
+  margin-bottom: 30px;
+  width: 250px;
 }
 
 footer .info {
-  background-color: #FFFFFF;
+  background-color: #fff;
   height: 143px;
+  position: absolute;
   text-align: center;
-  padding: 10px 0 0 0;
+  width: 1140px;
 }
 
-footer .info .topo p {
-  color: #AAAAAA;
+footer .info a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+footer .info a:hover {
+  color: #f5717f;
+  text-decoration: underline;
+}
+
+footer .info .topo {
+  color: #aaa;
   font-family: Roboto;
   font-size: 12px;
-  font-style: regular;
-  height: 5px;
+  font-style: normal;
+  height: 20px;
   line-height: 14px;
+  margin-bottom: 20px;
+  margin-top: 23px;
+  text-align: center;
 }
 
 footer .info .bottom {
-  padding: 5px 0 5px;
-  width: 750px;
   margin-left: 190px;
+  width: 750px;
 }
 
 footer .info .bottom p {
-  color: #AAAAAA;
+  color: #aaa;
   font-family: Roboto;
   font-size: 12px;
-  font-style: regular;
+  font-style: normal;
   line-height: 14px;
   line-height: 100%;
-  height: 5px;
-  padding: 5px 0 5px;
+  padding: 5px 0;
 }
