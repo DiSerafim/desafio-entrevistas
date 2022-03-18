@@ -52,7 +52,9 @@ function App() {
     infinite: true,
     speed: 500,
     slidesToShow: 1,
-    slidesToScroll: 1
+    adaptiveHeight: true,
+    fade: true,
+    cssEase: 'linear',
   };
 
   return (
@@ -119,12 +121,10 @@ function App() {
       {/* carousel */}
       <section class='carousel'>
         <Slider {...settings} className="slider">
-            <div class='image-carousel' color='red'></div>
-            <div class='image-carousel' color='white'></div>
-            <div class='image-carousel' color='black'></div>
-            <div class='image-carousel' color='blue'></div>
-            <div class='image-carousel' color='pink'></div>
-            <div class='image-carousel' color='green'></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
         </Slider>
       </section>
 
@@ -132,8 +132,12 @@ function App() {
       <main>
         <h1>forever baby <span>destaques</span></h1>
         <div class='card'>
-          <div class="image-card"></div>
-          <p class="title">Lorem ipsum lorem ipsum</p>
+          <a href='/'>
+            <div class="image-card"></div>
+          </a>
+          <a href='/'>
+            <p class="title">Lorem ipsum lorem ipsum</p>
+          </a>
           <p class="price">R$ 99,99</p>
           <p class="rating">⭐ ⭐ ⭐ ⭐ ⭐</p>
           <button>
@@ -142,8 +146,12 @@ function App() {
           </button>
         </div>
         <div class='card'>
-          <div class="image-card"></div>
-          <p class="title">Lorem ipsum lorem ipsum</p>
+          <a href='/'>
+            <div class="image-card"></div>
+          </a>
+          <a href='/'>
+            <p class="title">Lorem ipsum lorem ipsum</p>
+          </a>
           <p class="price">R$ 99,99</p>
           <p class="rating">⭐ ⭐ ⭐ ⭐ ⭐</p>
           <button>
@@ -152,8 +160,12 @@ function App() {
           </button>
         </div>
         <div class='card'>
-          <div class="image-card"></div>
-          <p class="title">Lorem ipsum lorem ipsum</p>
+          <a href='/'>
+            <div class="image-card"></div>
+          </a>
+          <a href='/'>
+            <p class="title">Lorem ipsum lorem ipsum</p>
+          </a>
           <p class="price">R$ 99,99</p>
           <p class="rating">⭐ ⭐ ⭐ ⭐ ⭐</p>
           <button>
@@ -162,8 +174,12 @@ function App() {
           </button>
         </div>
         <div class='card'>
-          <div class="image-card"></div>
-          <p class="title">Lorem ipsum lorem ipsum</p>
+          <a href='/'>
+            <div class="image-card"></div>
+          </a>
+          <a href='/'>
+            <p class="title">Lorem ipsum lorem ipsum</p>
+          </a>
           <p class="price">R$ 99,99</p>
           <p class="rating">⭐ ⭐ ⭐ ⭐ ⭐</p>
           <button>
@@ -174,8 +190,12 @@ function App() {
         
         <h1>forever baby <span>destaques</span></h1>
         <div class='card'>
-          <div class="image-card"></div>
-          <p class="title">Lorem ipsum lorem ipsum</p>
+          <a href='/'>
+            <div class="image-card"></div>
+          </a>
+          <a href='/'>
+            <p class="title">Lorem ipsum lorem ipsum</p>
+          </a>
           <p class="price">R$ 99,99</p>
           <p class="rating">⭐ ⭐ ⭐ ⭐ ⭐</p>
           <button>
@@ -184,8 +204,12 @@ function App() {
           </button>
         </div>
         <div class='card'>
-          <div class="image-card"></div>
-          <p class="title">Lorem ipsum lorem ipsum</p>
+          <a href='/'>
+            <div class="image-card"></div>
+          </a>
+          <a href='/'>
+            <p class="title">Lorem ipsum lorem ipsum</p>
+          </a>
           <p class="price">R$ 99,99</p>
           <p class="rating">⭐ ⭐ ⭐ ⭐ ⭐</p>
           <button>
@@ -194,8 +218,12 @@ function App() {
           </button>
         </div>
         <div class='card'>
-          <div class="image-card"></div>
-          <p class="title">Lorem ipsum lorem ipsum</p>
+          <a href='/'>
+            <div class="image-card"></div>
+          </a>
+          <a href='/'>
+            <p class="title">Lorem ipsum lorem ipsum</p>
+          </a>
           <p class="price">R$ 99,99</p>
           <p class="rating">⭐ ⭐ ⭐ ⭐ ⭐</p>
           <button>
@@ -204,8 +232,12 @@ function App() {
           </button>
         </div>
         <div class='card'>
-          <div class="image-card"></div>
-          <p class="title">Lorem ipsum lorem ipsum</p>
+          <a href='/'>
+            <div class="image-card"></div>
+          </a>
+          <a href='/'>
+            <p class="title">Lorem ipsum lorem ipsum</p>
+          </a>
           <p class="price">R$ 99,99</p>
           <p class="rating">⭐ ⭐ ⭐ ⭐ ⭐</p>
           <button>
@@ -230,16 +262,16 @@ function App() {
         <div class='sociais'>
           <h2>visite nossas redes sociais</h2>
           <div class='icons-sociais'>
-              <a href='https://www.instagram.com/' target="blank" placeholder="Instagran">
+              <a href='https://www.instagram.com/foreverliss' target="blank" placeholder="Instagran">
                 <img src={iconinsta} alt='icone instagran' />
               </a>
-              <a href='https://www.facebook.com/' target="blank" placeholder="Facebook">
+              <a href='https://www.facebook.com/foreverliss' target="blank" placeholder="Facebook">
                 <img src={iconface} alt='icone facebook' />
               </a>
-              <a href='https://www.youtube.com/' target="blank" placeholder="Youtube">
+              <a href='https://www.youtube.com/ForeverLissOficial' target="blank" placeholder="Youtube">
                 <img src={iconyou} alt='icone youtube' />
               </a>
-              <a href='https://www.tiktok.com/' target="blank" placeholder="Tik-tok">
+              <a href='https://www.tiktok.com/@foreverlissprofessional' target="blank" placeholder="Tik-tok">
                 <img src={icontic} alt='icone tik-tok' />
               </a>
           </div>
