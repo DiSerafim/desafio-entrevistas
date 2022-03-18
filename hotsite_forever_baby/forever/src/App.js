@@ -1,13 +1,60 @@
-import iconinsta from './images/icon-i.png'
-import iconface from './images/icon-f.png'
-import iconyou from './images/icon-y.png'
-import icontic from './images/icon-t.png'
-import cart from './images/cart.svg'
-import cards from './images/pagamentos-bandeiras-01.png'
-import user from './images/user.svg'
-import './App.css'
+import React, { useEffect, useState } from 'react';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+
+// import { useNavigate } from 'react-router-dom';
+
+import iconinsta from './images/icon-i.png';
+import iconface from './images/icon-f.png';
+import iconyou from './images/icon-y.png';
+import icontic from './images/icon-t.png';
+import cart from './images/cart.svg';
+import cards from './images/pagamentos-bandeiras-01.png';
+import user from './images/user.svg';
+import './App.css';
 
 function App() {
+  const { setUserSearch } = useState('');
+  const [input, setInput] = useState({ search: '' });
+  const [isDisabled, setIsDisabled] = useState(true);
+  // const navigate = useNavigate();
+
+  function handleChange({ target: { name, value } }) {
+    setInput((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
+
+  function handleClick() {
+    setUserSearch(input.search);
+    localStorage.setItem('user', JSON.stringify({ search: input.search }));
+    // navigate.push('/');
+  }
+
+  useEffect(() => {
+    // const re = '[a-zA-Z0-9]';
+    const minInputLength = 3;
+    const { search } = input;
+
+    if (search.length >= minInputLength) {
+      setIsDisabled(false);
+    }
+    else {
+      setIsDisabled(true);
+    }
+    
+  }, [input]);
+
+  let settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  };
+
   return (
     <div>
       {/* topo */}
@@ -25,8 +72,23 @@ function App() {
           </svg>
         </a>
         <form>
-          <input type="search" id="gsearch" name="gsearch" placeholder="Qual o mimo de hoje para o seu anjinho?" class="search" />
-          <input type="submit" value="BUSCAR" class="button" />
+          <input
+            class="search"
+            pattern="^[a-zA-Z0-9]+$"
+            id="search"
+            name="search"
+            onChange={ handleChange }
+            placeholder="Qual o mimo de hoje para o seu anjinho?"
+            required="required"
+            type="search"
+          />
+          <input
+            class="button"
+            disabled= { isDisabled }
+            onClick={ handleClick }
+            value="BUSCAR"
+            type="submit"
+          />
         </form>
         <div class='btn'>
           <a href='/' class='icon-user'>
@@ -56,14 +118,14 @@ function App() {
 
       {/* carousel */}
       <section class='carousel'>
-        <div class='image-carousel'></div>
-        <div class='btn-carousel'>
-          {/* li usado apenas para ilustração */}
-          <li>.</li>
-          <li>.</li>
-          <li>.</li>
-          <li>.</li>
-        </div>
+        <Slider {...settings} className="slider">
+            <div class='image-carousel' color='red'></div>
+            <div class='image-carousel' color='white'></div>
+            <div class='image-carousel' color='black'></div>
+            <div class='image-carousel' color='blue'></div>
+            <div class='image-carousel' color='pink'></div>
+            <div class='image-carousel' color='green'></div>
+        </Slider>
       </section>
 
       {/* conteudo */}
