@@ -60,6 +60,8 @@ menu li a {
   background-color: #245;
   min-height: 100%;
   display: block;
+  width: auto;
+  max-width: 90%;
 }
 
 .objective p {
@@ -119,6 +121,16 @@ section .card span {
   color: #333;
   font-size: 13px;
   letter-spacing: .05em;
+}
+
+section .highcharts {
+  width: 90%;
+  max-width: 1000px;
+}
+
+App .highcharts {
+  width: 90%;
+  max-width: 1000px;
 }
 
 @media only screen and (min-width: 400px) {

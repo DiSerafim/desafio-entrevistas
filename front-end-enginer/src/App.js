@@ -1,4 +1,6 @@
 import React from "react";
+import Highcharts from "highcharts/highstock";
+import HighchartsReact from "highcharts-react-official";
 import logo from './images/Logo-Tractian.svg';
 import './App.css';
 
@@ -73,63 +75,50 @@ class App extends React.Component {
       <h1>Por favor espere um pouco....</h1>
     </div>;
 
+    const options = {
+      title: {
+        text: 'Gráfico'
+      },
+        
+      series: [{
+        data: [
+          items,
+          items.specificationsMaxTemp,
+          items.status,
+          items.healthscore,
+          items.metricsTotalCollectsUptime,
+          items.metricsTotalUptime,
+          items.metricsLastUptimeAt,
+        ]
+      }]
+    }
+    console.log(options.series, 'Seriesss');
+
+    // const data = items
+        // let name = 0,
+        //   model = 0,
+        //   specificationsMaxTemp = 0,
+        //   status = 0,
+        //   healthscore = 0,
+        //   metricsTotalCollectsUptime = 0,
+        //   metricsTotalUptime = 0,
+        //   metricsLastUptimeAt = 0,
+        //   unitId = 0,
+        //   companyId = 0;
+
     return (
       <div className="App">
+        <div>
+          
+        </div>
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1>
             Desafio Front-End Software Engineer
           </h1>
-          {/* <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a> */}
         </header>
-        <menu>
-            <li>
-              <a
-                className="App-link"
-                href="https://reactjs.org"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Ativos
-              </a>
-            </li>
-            <li>
-              <a
-                className="App-link"
-                href="https://reactjs.org"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Empresas
-              </a>
-            </li>
-            <li>
-              <a
-                className="App-link"
-                href="https://reactjs.org"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Gráficos
-              </a>
-            </li>
-        </menu>
         <div className="objective">
-          <p>
-            - Mostrar todas as características do ativos; ✔<br />
-            - Mostrar empresas, unidades e usuários; ✔<br />
-            - Ações como delegar responsável, atualizar ativo, empresa, unidade e usuários<br />
-            - Utilizar gráficos para mostrar os níveis de saúde, status e etc<br />
-            - Consumir API (https://github.com/tractian/fake-api)<br />
-          </p>
-          <h1>Mostrar todas as características do ativos</h1>
+          <h1>Ativos</h1>
         </div>
         <section>
           {
@@ -151,9 +140,6 @@ class App extends React.Component {
                   <p>Unidade: <span>{ item.unitId }</span></p>
                   <p>Empresa: <span>{ item.companyId }</span></p>
                 </article>
-                <div className="thumb">
-                  Grafico
-                </div>
               </div>
               </div>
             ))
@@ -161,7 +147,7 @@ class App extends React.Component {
         </section>
 
         <div className="objective">
-        <h1>Mostrar empresas, unidades e usuários;</h1>
+          <h1>Empresas, unidades e usuários;</h1>
         </div>
         <section>
           {
@@ -206,16 +192,15 @@ class App extends React.Component {
         </section>
 
         <div className="objective">
-          <h1>Ações como delegar responsável, atualizar ativo, empresa, unidade e usuários</h1>
-        </div>
-
-        <div className="objective">
-          <h1>Utilizar gráficos para mostrar os níveis de saúde, status e etc</h1>
-        </div>
-
-        <div className="objective">
-          <h1>Consumir API (https://github.com/tractian/fake-api)</h1>
-        </div>
+          <h1>Gráficos</h1>
+          </div>
+          <div className="highcharts">
+            <HighchartsReact
+              highcharts={Highcharts}
+              constructorType={'stockChart'}
+              options={options}
+            />
+          </div>
       </div>
     );
   }
