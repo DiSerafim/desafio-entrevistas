@@ -1,0 +1,161 @@
+html {
+  background-color: #ccc;
+  font-family: Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  padding: 20px 0;
+}
+
+.App-logo {
+  height: 2vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 10000s linear;
+  }
+}
+/*  */
+.App-header {
+  background-color: rgb(37 99 235);;
+  min-height: 3vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.App-header img {
+  margin: 0 25px;
+}
+
+.App-header h1 {
+  display: flex;
+  font-size: calc(10px + 2vmin);
+  color: #61dafb;
+  margin-left: 100px;
+  text-decoration: underline;
+  text-decoration-color: #ccc;
+}
+
+menu {
+  background-color: #282c34;
+  min-height: 2vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+menu li {
+  color: white;
+  padding: 10px;
+  list-style: none;
+}
+
+menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+.objective {
+  background-color: #245;
+  min-height: 100%;
+  display: block;
+  width: auto;
+  max-width: 90%;
+}
+
+.objective p {
+  color: white;
+  padding: 0 0 0 20px;
+}
+
+.objective h1 {
+  color: white;
+  padding: 0 0 0 20px;
+  width: 100%;
+}
+
+section {
+  width: 90%;
+  max-width: 1240px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+}
+
+section .card {
+  background-color: white;
+  color: #444;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  position: relative;
+  top: 0;
+  transition: all 1s ease-in;
+}
+
+section .card:hover {
+  top: -2px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+section .card .thumb {
+  width: 100%;
+  position: center;
+}
+
+section .card article {
+  padding: 0 20px;
+}
+
+section .card p {
+  font-size: 16px;
+  color: #999;
+  font-weight: bold;
+}
+
+section .card span {
+  color: #333;
+  font-size: 13px;
+  letter-spacing: .05em;
+}
+
+section .highcharts {
+  width: 90%;
+  max-width: 1000px;
+}
+
+App .highcharts {
+  width: 90%;
+  max-width: 1000px;
+}
+
+@media only screen and (min-width: 400px) {
+  section {
+    grid-template-columns:1fr;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  section {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
