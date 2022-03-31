@@ -191,24 +191,25 @@ menu > li > a:hover {
 .carousel {
   height: 400px;
   text-align: center;
-  width: 1140px;
-  background-color: #345c7d;
+  max-width: 1140px;
+  background-color: #f1f1f1;
 }
 
 .carousel .slider {
-  height: 300px;
-  text-align: center;
-  width: 990px;
-  background-color: #274;
-  margin-left: 0;
+  height: 400px;
+  max-width: 93%;
+  min-width: 94%;
+  margin-left: 30px;
   margin-top: 0;
+  text-align: center;
+  width: 890px;
 }
 
-.carousel .image-carousel {
-  background: #f1f1f1;
-  height: 380px;
-  margin-top: 0;
-  width: 1140px;
+.carousel .slider .image-carousel {
+  /* position: absolute; */
+  height: 380vh;
+  max-height: 380px;
+  margin-top: 10px;
 }
 
 .carousel li {
@@ -261,6 +262,10 @@ main .card .image-card {
   background-color: #f1f1f1;
   height: 190px;
   width: 256px;
+}
+
+main .card a {
+  text-decoration: none;
 }
 
 main .card .title {
