@@ -2,6 +2,8 @@ import React from "react";
 import './Diagrama.css';
 
 const Diagrama = () => {
+    
+
     return (
         <div className="di">
             <div className="question">

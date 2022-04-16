@@ -17,6 +17,10 @@ const Fibonacci = () => {
             </div>
             <div className="result">
                 <h3>Resultado</h3>
+                <form>
+                    <input />
+                    <button>Ver</button>
+                </form>
             </div>
             <hr></hr><br></br>
         </div>
