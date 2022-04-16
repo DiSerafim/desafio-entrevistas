@@ -1,3 +1,21 @@
 .tri {
     background-color: azure;
 }
+
+.inválido {
+    background-color: red;
+}
+
+.escaleno {
+    background-color: green;
+    color: white;
+}
+
+.isósceles {
+    background-color: yellow;
+}
+
+.equilátero {
+    background-color: blue;
+    color: white;
+}
