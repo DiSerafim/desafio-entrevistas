@@ -5,7 +5,7 @@ const Triangulo = () => {
     const [value1, setValue1] = useState();
     const [value2, setValue2] = useState();
     const [value3, setValue3] = useState();
-    const [result, setResult] = useState('Resultado..  (-*_*-)');
+    const [result, setResult] = useState('#####');
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -19,11 +19,6 @@ const Triangulo = () => {
             setResult("inválido - Valor inválido");
         }
     }
-
-    // const handleChange = (e) => {
-    //     e.preventDefault();
-    //     console.log(setValue1`valor-01 ${value1}`,setValue2`valor-02 ${value2}`,setValue3`valor-03 ${value3}`)
-    // }
 
     return (    
         <div className="tri">
@@ -64,7 +59,10 @@ const Triangulo = () => {
                     />
                     <button onClick={handleSubmit}>Ver</button>
                 </form>
-                <span className={result}>{result}</span>
+                <div className={result}>
+                    <p>Resultado.. </p>
+                    <span>{result}</span>
+                </div>
             </div>
             <hr></hr><br></br>
         </div>
