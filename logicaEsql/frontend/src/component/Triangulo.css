@@ -1,21 +1,175 @@
 .tri {
+    background-color: antiquewhite;
+    flex: 1;
+    margin: 0 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.question {
+    flex: 1;
+    margin-top: 1rem;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 15px;
+}
+
+.question p {
+    margin: 2px 0;
+}
+
+.rules {
+    font-family: Roboto;
+    font-size: 14;
+}
+
+.rules ul {
+    font-weight: 600;
+}
+
+.rules ul li {
+    font-weight: 400;
+}
+
+.result {
     background-color: azure;
+    padding: 20px;
+    border-radius: 25px;
 }
 
-.inválido {
+.result h3 {
+    font-family: Roboto;
+}
+
+.result form {
+    text-align: center;
+    padding: 10px;
+}
+
+.result form input {
+    height: 15px;
+    padding: 10px;
+    margin-left: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-family: Roboto;
+    font-size: 14px;
+}
+
+.result form button {
+    /* height: 15px; */
+    padding: 10px;
+    margin-left: 15px;
+    border-radius: 50%;
+}
+
+.result .saida {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.result .saida .result {
+    flex-basis: 10%;
+    padding: 8px;
+    margin-right: 15px;
+}
+
+.result .saida span {
+    flex-basis: 40%;
+    padding: 8px;
+    font-weight: 600;
+    margin-right: 15px;
+}
+
+.result .inválido {
     background-color: red;
+    flex-basis: 30%;
+    height: 50px;
+    max-width: 50px;
+    border-radius: 50%;
 }
 
-.escaleno {
-    background-color: green;
-    color: white;
+.result .escaleno {
+    width: 100px;
+    border-bottom: 100px solid lightgreen;
+    border-right: 150px solid transparent;
+    border-left: 200px solid transparent;
+    box-sizing:border-box;
 }
 
-.isósceles {
-    background-color: yellow;
+.result .isósceles {
+    border-bottom: 100px solid yellowgreen;
+    width: 100px;
+    border-right: 100px solid transparent;
+    border-left: 50px solid transparent;
+    box-sizing:border-box;
 }
 
-.equilátero {
-    background-color: blue;
-    color: white;
+.result .equilátero {
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-top: 0;
+    border-bottom: 100px solid green;
+}
+
+@media (max-width: 700px) {
+    .tri {
+        max-width: 99%;
+    }
+
+    .result form {
+        padding: 10px;
+    }
+    
+    .result form input {
+        height: 15px;
+        width: 90%;
+        margin-bottom: 15px;
+        border-radius: 15px;
+        border-color: rgb(238, 237, 237);
+    }
+    
+    .result .saida {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        align-items: center;
+        text-align: left;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    
+    .result .saida .result {
+        width: 90%;
+        padding: 8px;
+        margin-right: 15px;
+    }
+    
+    .result .saida span {
+        width: 90%;
+        padding: 8px;
+        margin-right: 15px;
+    }
+
+    .result .inválido {
+        background-color: red;
+        height: 150px;
+        max-width: 150px;
+        border-radius: 50%;
+        padding: 8px;
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        body {
+            background-color: yellow;
+        }
+    }
 }
