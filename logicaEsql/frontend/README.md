@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+Nome:
+Teste de Lógica
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. Desenvolva um código permitindo ao usuário digitar os 3 lados de um triângulo. Baseado nos 3
+valores digitados, deverá ser exibido se o triangulo é “inválido”, “equilátero”, “isósceles” ou
+“escaleno”.
 
-## Available Scripts
+Regras:
+ Um triângulo existe se, somente se, um de seus lados for maior que a diferença dos outros
+dois lados, e menor que a soma dos outros dois lados.
+ Um triangulo equilátero possui seus 3 lados com a mesma medida.
+ Um triangulo isósceles possui dois de seus lados com a mesma medida.
+ Um triangulo escaleno possui cada lado com uma medida diferente.
 
-In the project directory, you can run:
+-----------
 
-### `npm start`
+2. Desenvolva uma aplicação para exibir na tela, com o uso de recursividade, os 30 primeiros
+resultados da “Sequência de Fibonacci”.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+ Sequencia básica de Fibonacci: 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, ...
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+------------
 
-### `npm test`
+3. Considerando o diagrama de classes abaixo, temos um objeto “List&lt;Casa&gt; casas” que pode conter
+N elementos. Exiba para o usuário o “Endereço”, “Metragem” e a quantidade de “Comodos”
+apenas das casas que possuam pelo menos 1 comodo com numero par de janelas.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
++Endereço : string
++Cor : string
++Metragem : int
++Comodos : List&lt;Comodo&gt;
+Casa
 
-### `npm run build`
++Nome : string
++Janelas : int
++Portas : int
+Comodo
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Considerações:
+ No “Endereço” já vem preenchido o numero do imóvel e o tipo de logradouro.
+ Exibir no seguinte formato: “Rua Castro Alves 550 – 10m² - 3 comodos.”
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-------------
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Nome:
+Teste de SQL
+1. Criar query que retorne CurrencyCode e a soma de TotalCost agrupado por CurrencyCode onde o
+RecordLocator seja igual a string “ABC123”.
+Localização das informações:
+RecordLocator – Tabela Booking
+CurrencyCode – Tabela Booking
+TotalCost – Tabela BookingPassenger
 
-### `npm run eject`
+----------
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Criar uma query que retorne DepartureStation, ArrivalStation e quantidade de Passageiros (PassengerID)
+agrupados por DepartureStation e ArrivalStation filtrado de acordo com a coluna DepartureDate e
+FlightNumber
+DepartureDate – Tabela PassengerJourneySegment
+DepartureStation – Tabela PassengerJourneySegment
+ArrivalStation – Tabela PassengerJourneySegment
+FlightNumber – Tabela PassengerJourneySegment
+PassengerID – Tabela PassengerJourneySegment
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+--------------
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+3. Tranforme a query do item 2 em uma Stored Procedure que receba como parâmetro DepartureDate
+(obrigatório) e FlightNumber (opcional)
