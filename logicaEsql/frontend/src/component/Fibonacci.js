@@ -12,8 +12,10 @@ const Fibonacci = () => {
                 // document.write(setResult[i] = setResult[i - 1] + setResult[i - 2]);
                 setResult[i] = setResult[i - 1] + setResult[i - 2];
                 document.write(' ' + setResult[i]);
+                // setResult(' ' + setResult[i]);
             } else {
                 document.write(setResult[i] = 1);
+                // setResult(setResult[i] = 1);
             }
           }
     };
@@ -21,7 +23,7 @@ const Fibonacci = () => {
     return (
         <div className="fi">
             <div className="question">
-                Desenvolva uma aplicação para exibir na tela, com o uso de recursividade, os 30 primeiros resultados da “Sequência de Fibonacci”.
+                <p>2 - Desenvolva uma aplicação para exibir na tela, com o uso de recursividade, os 30 primeiros resultados da “Sequência de Fibonacci”.</p>
             </div>
             <div className="rules">
                 <ul>
@@ -32,7 +34,7 @@ const Fibonacci = () => {
                 </ul>
             </div>
             <div className="result">
-                <h3>Resultado</h3>
+                <h3>Resultado:</h3>
                 <form>
                     <input
                         onChange={(e) => setValue1(e.target.value)}
@@ -45,8 +47,8 @@ const Fibonacci = () => {
                     <button onClick={handleSubmit}>Ver</button>
                 </form>
                 <div>
-                    <p>Resultado</p>
-                    <span>{result}</span>
+                    <p>Resultado..</p>
+                    <span>{result} - A resposta será exibida em uma nova pagina.</span>
                 </div>
             </div>
             <hr></hr><br></br>

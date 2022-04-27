@@ -16,14 +16,15 @@ const Triangulo = () => {
         } else if ((value1 !== value2 && value1 !== value3) && (value1 > 0 && value2 > 0 && value3 > 0)) {
             setResult("escaleno - Cada lado possui uma medida diferente.");
         } else {
-            setResult("inválido - Valor inválido");
+            setResult("inválido - Algum erro nos valores inseridos!");
         }
     }
 
     return (    
         <div className="tri">
             <div className="question">
-                Desenvolva um código permitindo ao usuário digitar os 3 lados de um triângulo. Baseado nos 3 valores digitados, deverá ser exibido se o triangulo é “inválido”, “equilátero”, “isósceles” ou “escaleno”.
+                <p>1 - Desenvolva um código permitindo ao usuário digitar os 3 lados de um triângulo.</p>
+                <p>Baseado nos 3 valores digitados, deverá ser exibido se o triangulo é “inválido”, “equilátero”, “isósceles” ou “escaleno”.</p>
             </div>
             <div className="rules">
                 <ul>
@@ -59,9 +60,10 @@ const Triangulo = () => {
                     />
                     <button onClick={handleSubmit}>Ver</button>
                 </form>
-                <div className={result}>
-                    <p>Resultado.. </p>
+                <div className="saida">
+                    <p className="result">Resultado.. </p>
                     <span>{result}</span>
+                    <p className={result}></p>
                 </div>
             </div>
             <hr></hr><br></br>

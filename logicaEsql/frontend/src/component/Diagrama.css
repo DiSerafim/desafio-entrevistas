@@ -1,3 +1,49 @@
 .di {
-    background-color: rgb(172, 171, 171);
+    background-color: antiquewhite;
+    flex: 1;
+    margin: 0 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.di .question {
+    flex: 1;
+    margin-top: 1rem;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.di .question p {
+    margin: 2px 0;
+}
+
+.rules {
+    font-family: Roboto;
+    font-size: 14;
+}
+
+.rules ul {
+    font-weight: 600;
+}
+
+.rules ul li {
+    font-weight: 400;
+    list-style: none;
+}
+
+.result {
+    background-color: azure;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+@media (max-width: 700px) {
+    .rules ul li img {
+        width: 90%;
+    }
+
+    .rules ul li {
+        width: 95%;
+    }
 }

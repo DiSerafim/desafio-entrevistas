@@ -1,3 +1,39 @@
 .fi {
-    background-color: bisque;
+    flex: 1;
+    margin: 0 8px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.fi .question {
+    padding: 0 15px;
+    flex: 1;
+    margin-top: 1rem;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.fi .question p {
+    margin: 2px 0;
+}
+
+.fi .rules {
+    font-family: Roboto;
+    font-size: 14;
+}
+
+.fi .rules ul {
+    font-weight: 600;
+}
+
+.fi .rules ul li {
+    font-weight: 400;
+}
+
+.fi .result {
+    background-color: azure;
+    padding: 20px;
+    border-radius: 25px;
 }
